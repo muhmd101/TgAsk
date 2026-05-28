@@ -32,6 +32,8 @@ OPENAI_API_BASE = getenv("OPENAI_API_BASE")
 
 OPENAI_API_MODEL = getenv("OPENAI_API_MODEL")
 
+OPENWEATHERMAP_API_KEY = getenv("OPENWEATHERMAP_API_KEY") or None
+
 SYSTEM_PROMPT = """
 You are a smart AI assistant embedded inside Telegram as an inline bot.
 

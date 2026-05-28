@@ -11,7 +11,7 @@ Example: [@HRKBOT](https://t.me/HRKBOT)
 - **AI Tool Calling** — The agent can invoke tools autonomously:
   - **Web Search** — DuckDuckGo search for real-time info
   - **Web Reader** — Extract text content from any URL
-  - **Weather** — Get current weather for any city (OpenWeatherMap)
+  - **Weather** — Get current weather for any city (optional, requires OpenWeatherMap API key)
   - **Date & Time** — Get current date/time for any timezone
 - **Multi-language UI** — English and Arabic (auto-detected from user's Telegram language)
 - **Telegram Stars Donations** — Built-in `/support` command for star donations
@@ -22,7 +22,7 @@ Example: [@HRKBOT](https://t.me/HRKBOT)
 - Telegram Bot Token (from [@BotFather](https://t.me/BotFather))
 - Telegram API ID & Hash (from [my.telegram.org](https://my.telegram.org))
 - OpenAI API Key
-- OpenWeatherMap API Key (for weather tool)
+- OpenWeatherMap API Key (optional, for weather tool — get one free at [openweathermap.org](https://openweathermap.org/api))
 
 ## Setup
 
@@ -52,6 +52,7 @@ BOT_TOKEN=your_bot_token
 OPENAI_API_KEY=your_openai_api_key
 OPENAI_API_BASE=https://api.openai.com/v1
 OPENAI_API_MODEL=gpt-4o
+OPENWEATHERMAP_API_KEY=your_openweathermap_api_key  # optional
 ```
 
 4. Run the bot:
