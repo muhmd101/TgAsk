@@ -29,7 +29,7 @@ Example: [@HRKBOT](https://t.me/HRKBOT)
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/TgAskbot.git
+git clone https://github.com/muhmd101/TgAsk.git
 cd TgAskbot
 ```
 
