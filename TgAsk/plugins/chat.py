@@ -47,7 +47,10 @@ async def askai(client: Client, message: Message):
             msg = getattr(msg, "reply_to_message", None)
         history.reverse()
     log.info("User %s asked: %s", user_id, query[:100])
-    messages = history + [HumanMessage(content=query)]
+    MARKDOWN_REMINDER = (
+        "\n\n[IMPORTANT REMINDER: You are responding inside Telegram. You MUST follow the formatting rules defined in your system prompt. Violating them will cause broken output.]"
+    )
+    messages = history + [HumanMessage(content=query + MARKDOWN_REMINDER)]
     guest = await client.answer_guest_query(
         guest_query_id=message.guest_query_id,
         result=InlineQueryResultArticle(
