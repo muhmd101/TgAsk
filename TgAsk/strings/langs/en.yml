@@ -1,0 +1,45 @@
+start_msg: |
+  **Welcome** {mention}.
+
+  I'm [{name}](t.me/{username}), an AI assistant inside Telegram that answers your questions directly in any chat.
+
+  **You can use me as:**
+  · An information assistant — ask me anything and I'll answer instantly.
+  · A chat assistant — send answers in any conversation without leaving it.
+
+  Try:
+  `@{username} What is artificial intelligence?`
+
+inline_query_msg: |
+  **Question**
+  {query}
+
+  __Getting the answer...__
+
+support_ask_amount: |
+  **How many stars do you want to donate?**
+  Enter a number, e.g. `5` or `50`.
+
+support_invoice_title: "Support the Bot"
+support_invoice_description: "Your donation helps the bot keep running and improving. Thank you."
+
+support_timeout: |
+  **Time's up.**
+  You didn't respond within {timeout} seconds. Send /support to try again.
+
+support_invalid_amount: |
+  **Invalid number.**
+  Send /support and enter a valid number.
+
+support_thanks: |
+  **Thank you for {amount} stars.**
+  Your donation makes a real difference.
+
+support_invalid_range: |
+  **Out of allowed range.**
+  Enter a number between **1** and **10,000** stars.
+  Send /support and try again.
+
+error_msg: |
+  **Something went wrong.**
+  An error occurred while processing your request. Please try again later.
